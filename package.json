@@ -1,0 +1,34 @@
+{
+  "name": "@jaspero/git-time-extract",
+  "version": "0.0.2",
+  "description": "A tiny command line util that accumulates all commits with time.",
+  "main": "index.js",
+  "bin": {
+    "gte": "./index.js",
+    "git-tiem-extract": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jaspero/git-time-extract.git"
+  },
+  "keywords": [
+    "git",
+    "bash",
+    "cmd",
+    "time",
+    "tracking"
+  ],
+  "author": {
+    "name": "Jaspero Ltd",
+    "email": "info@jaspero.co"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jaspero/git-time-extract/issues"
+  },
+  "homepage": "https://github.com/Jaspero/git-time-extract#readme"
+}

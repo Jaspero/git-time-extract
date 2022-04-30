@@ -1,6 +1,8 @@
+#!/usr/bin/env node
+
 const { exec } = require('child_process');
 
-const [time] = process.argv.slice(2);
+const [filters] = process.argv.slice(2);
 const timeMap = {
   s: 1 / 3600,
   sec: 1 / 3600,
@@ -11,8 +13,8 @@ const timeMap = {
 };
 
 exec(
-  `git log ${time ? `--since="${time}"` : ''} --grep="time"`,
-  (error, stdout, stderr) => {
+  `git log ${filters || ''} --grep="time"`,
+  (error, stdout) => {
     const lines = stdout
       .split('\n')
       .filter((it) => it.startsWith('    ') && it.includes('time:'))
