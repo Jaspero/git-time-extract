@@ -27,8 +27,15 @@ You can also use any `git log` filters such as:
 --committer=<pattern>
 ```
 
-For example:
+### Examples
 
+Get the hours for a perticular author before yesterday
 ```
 gte --author="filip" --before="yesterday"
+```
+
+
+Get the hours before a day
+```
+gte --before="2020-12-01"
 ```
