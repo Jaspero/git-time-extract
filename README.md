@@ -34,7 +34,6 @@ Get the hours for a perticular author before yesterday
 gte --author="filip" --before="yesterday"
 ```
 
-
 Get the hours before a day
 ```
 gte --before="2020-12-01"
